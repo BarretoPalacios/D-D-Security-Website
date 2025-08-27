@@ -42,8 +42,8 @@ const ContactPage = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-xl font-bold mb-2">Oficina Principal</h3>
-                    <p className="text-gray-700">Av. Seguridad 1234, Piso 8</p>
-                    <p className="text-gray-700">Distrito Financiero, Ciudad Capital</p>
+                    <p className="text-gray-700">Av. Gerardo Unger 3601 dpto 103 </p>
+                    <p className="text-gray-700">Independencia</p>
                   </div>
                 </div>
                 
@@ -67,7 +67,6 @@ const ContactPage = () => {
                   <div className="ml-4">
                     <h3 className="text-xl font-bold mb-2">Correo Electrónico</h3>
                     <p className="text-gray-700">contacto@dydsecurity.com</p>
-                    <p className="text-gray-700">soporte@dydsecurity.com</p>
                   </div>
                 </div>
                 
@@ -86,39 +85,26 @@ const ContactPage = () => {
               </div>
             </div>
             
-            {/* Mapa */}
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.12345678901234567!3d51.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA3JzI0LjQiTiAwwrAwNyczNi4xIlc!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
-                width="100%" 
-                height="300" 
-                style={{ border: 0 }}
-                allowFullScreen 
-                loading="lazy"
-                title="Ubicación D&D Security"
-              ></iframe>
-            </div>
+            
           </div>
           
           {/* Columna derecha - Formulario */}
           <div>
-            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4" style={{ borderColor: '#004FAC' }}>
-              <div className="flex items-center mb-6">
-                <Send className="w-8 h-8 mr-3" style={{ color: '#00A9DD' }} />
-                <h2 className="text-3xl font-bold" style={{ color: '#004FAC' }}>Envíanos un Mensaje</h2>
-              </div>
-              <p className="text-gray-600 mb-8">
-                Completa el formulario y uno de nuestros especialistas se pondrá en contacto contigo en menos de 24 horas.
-              </p>
-              
-              {/* Aquí integras tu componente de formulario existente */}
-              <Forms />
-
-              <div className="mt-6 text-sm text-gray-500">
-                <p>Al enviar este formulario, aceptas nuestra <a href="#" className="underline" style={{ color: '#004FAC' }}>Política de Privacidad</a>.</p>
-              </div>
-            </div>
             
+            {/* Mapa */}
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.737897720539!2d-77.06006692415356!3d-11.992629340896789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce54bbf31699%3A0x49d19ceb47265d77!2sAv.%20Gerardo%20Unger%203601%2C%20Independencia%2015311!5e0!3m2!1ses-419!2spe!4v1756275621725!5m2!1ses-419!2spe" 
+        width="100%" 
+        height="450" 
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy" 
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Ubicación de nuestra oficina en Av. Gerardo Unger 3601, Independencia"
+      >
+      </iframe>
+            </div>
             {/* Sección de emergencia */}
             <div className="mt-10 bg-red-50 rounded-xl p-6 border-l-4" style={{ borderColor: '#004FAC' }}>
               <div className="flex items-start">
@@ -142,29 +128,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* CTA Final
-      <div className="bg-gray-900 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">¿Prefieres que te llamemos nosotros?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Déjanos tu número y te contactaremos en el horario que nos indiques
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <input 
-              type="tel" 
-              placeholder="Tu número de teléfono" 
-              className="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2" 
-              style={{ focusRingColor: '#00A9DD' }}
-            />
-            <button 
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold transition whitespace-nowrap"
-              style={{ backgroundColor: '#004FAC' }}
-            >
-              Solicitar llamada
-            </button>
-          </div>
-        </div>
-      </div> */}
+      
     </div>
 <Footer />
     </>

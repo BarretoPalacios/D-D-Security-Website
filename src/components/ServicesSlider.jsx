@@ -78,7 +78,7 @@ const ServicesSlider = () => {
         <div className="container mx-auto max-w-6xl">
           {/* Icono y título */}
           <div className="flex items-center mb-6">
-            <div className="p-3 bg-[#00A9DD]/80 rounded-lg">
+            <div className="p-3 bg-[#004FAC]/80 rounded-lg">
               {servicios[currentIndex].icon}
             </div>
             <h3 className="ml-4 text-2xl font-light tracking-wider">
@@ -97,7 +97,7 @@ const ServicesSlider = () => {
           </p>
           
           {/* Botón CTA */}
-          <a href="/contacto" className="px-8 py-4 bg-[#00A9DD] hover:bg-blue-700 rounded-lg text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl">
+          <a href="https://wa.me/51937203853"  target='blank' className="px-8 py-4 bg-green-500 text-white hover:bg-blue-700 rounded-lg text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl">
             Solicitar servicio
           </a>
         </div>

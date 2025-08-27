@@ -1,17 +1,12 @@
-import {
-  ShieldCheck,
-  UserSquare,
-  Phone,
-  Check,
-  MapPin,
-
-} from "lucide-react";
+import { ShieldCheck, UserSquare, Phone, Check, MapPin } from "lucide-react";
 import WhatsAppButton from "../components/WhatsAppButton";
 import Navbar from "../components/Navbar";
 import Forms from "../components/Forms";
 import Footer from "../components/Footer";
 import ServicesSlider from "../components/ServicesSlider";
 import AdditionalServices from "../components/AdditionalServices";
+import ServicesCarousel from "../components/ServicesCarousel";
+import ServiceCards from "../components/Servicescard";
 
 const Inicio = () => {
   return (
@@ -21,81 +16,10 @@ const Inicio = () => {
       {/* Navbar Mejorado */}
       <Navbar />
 
-      {/* Hero Section con Video de Fondo */}
-      <section
-        id="home"
-        className="relative min-h-screen pt-24 pb-16 flex items-center justify-center overflow-hidden"
-      >
-        {/* Video de fondo */}
-        <div className="absolute inset-0 z-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src="videos/baner.mp4" type="video/mp4" />
-            {/* Fallback image */}
-            <img
-              src="img/istockphoto-842004510-1024x1024.jpg"
-              alt="Fondo de seguridad"
-              className="w-full h-full object-cover"
-            />
-          </video>
-          <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+      {/* Hero Section*/}
+      <ServicesSlider />
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white font-bold">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                D&D <span className="text-blue-400">Security SAC</span>
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 max-w-2xl font-bold">
-                Protegiendo lo que más valoras con más de 10 años de
-                experiencia, incluyendo servicio en la Policía Nacional.
-              </p>
-
-              <ul className="space-y-4 mb-10">
-                <li className="flex items-start">
-                  <ShieldCheck className="w-6 h-6 mr-3 mt-1 text-blue-400 flex-shrink-0" />
-                  <span className="font-bold">Personal de confianza y altamente capacitado</span>
-                </li>
-                <li className="flex items-start">
-                  <UserSquare className="w-6 h-6 mr-3 mt-1 text-blue-400 flex-shrink-0" />
-                  <span className="font-bold">Tecnología de punta y monitoreo continuo</span>
-                </li>
-                <li className="flex items-start">
-                  <Phone className="w-6 h-6 mr-3 mt-1 text-blue-400 flex-shrink-0" />
-                  <span className="font-bold">Atención inmediata 24/7</span>
-                </li>
-              </ul>
-
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="/contacto"
-                  className="px-8 py-3 bg-[#004FAC] hover:bg-blue-700 text-white font-semibold rounded-full transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
-                >
-                  Solicitar Cotización
-                </a>
-                <a
-                  href="tel:937203853"
-                  className="px-8 py-3 bg-white text-black font-semibold rounded-full transition-all"
-                >
-                  Llamar ahora
-                </a>
-              </div>
-            </div>
-
-            {/* Formulario */}
-            <Forms />
-          </div>
-        </div>
-      </section>
-
-
- {/* experiencia */}
+      {/* experiencia */}
       <section id="experiencia" className="py-20 bg-white ">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -107,7 +31,7 @@ const Inicio = () => {
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-600">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#004FAC]">
                 Expertos en Protección con Tradición Policial
               </h2>
 
@@ -208,38 +132,11 @@ const Inicio = () => {
       </section>
 
       {/* Servicios  */}
-      <div className="block py-20 gradient-bg px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-          Nuestros Servicios
-        </h2>
-        <p className="text-lg text-gray-200 text-center max-w-3xl mx-auto mb-12">
-          Ofrecemos una amplia gama de servicios de seguridad adaptados a las
-          necesidades específicas de cada cliente, garantizando la máxima
-          protección y tranquilidad.
-        </p>
-      </div>
-      <ServicesSlider />
+      <ServiceCards />
 
       {/* servicios adicionales  */}
       <AdditionalServices />
 
-      {/* Contacto (sección idéntica al original) */}
-      <section id="contact" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            Contáctanos
-          </h2>
-          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
-            Estamos aquí para ayudarte. Contáctanos para una consulta gratuita y
-            descubre cómo podemos proteger lo que más valoras.
-          </p>
-
-          {/* Formulario */}
-          <div className="max-w-3xl mx-auto ">
-            <Forms />
-          </div>
-        </div>
-      </section>
 
       {/* Footer (sección idéntica al original) */}
       <Footer />

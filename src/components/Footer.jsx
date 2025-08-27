@@ -13,16 +13,18 @@ import {
 function Footer() {
   return (
     <>
-    <footer className="bg-[#004FAC] text-white py-16">
+    <footer className="bg-black text-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                D&D <span className="text-blue-400">Security</span> SAC
+                D & D <span className="text-blue-400">SECURITY </span> S.A.C. 
               </h3>
+              <h4>
+                RUC:  20614206544
+              </h4>
               <p className="text-gray-300 mb-6">
-                Comprometidos con tu seguridad. Más de 10 años de experiencia y
-                más de 300 clientes satisfechos.
+                Trabajamos con personal policial en actividad altamente capacitado en prevención y uso de armas de fuego.
               </p>
               <div>
                 <h4 className="text-lg font-semibold mb-3 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-10 after:h-0.5 after:bg-blue-400">
